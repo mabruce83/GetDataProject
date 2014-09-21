@@ -15,6 +15,6 @@ The run_analysis.R script processes the original data files by:
 
 ## Results
 The resulting tidy data frame is then output as a text file (tidy_DF.txt), using the write.table function.  To import the result back into R, the following code may be used:
-'''
+```
 data <- read.table("tidy_DF.txt", header = TRUE)
-'''
+```

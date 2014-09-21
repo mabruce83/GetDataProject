@@ -2,7 +2,9 @@
 
 ## Original data:
 The original data set was acquired from:
+
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+
 From the original data set, the following files were read:
 * features.txt
 * activity_labels.txt
@@ -12,6 +14,7 @@ From the original data set, the following files were read:
 * subject_train.txt
 * X_train.txt
 * y_train.txt
+
 The original variables measured are described in the features_info.txt document packaged with the original data set.
 
 ## Merge training and test sets
@@ -30,7 +33,7 @@ In order to create a tidy data set with proper variable names, the original name
 * Remove non-alpha-numeric characters
 * Expand abbreviations "f," "t," and "Acc" to "Frequency," "Time," and "Acceleration" respectively.
 * For improved readability, "mean" and "std" were renamed "Mean" and "Std" respectively.
-* To correct for an apparent mislabeled variable name in the original data set "BodyBody" was relabeled to "Body"
+* To correct for an apparent mislabeled variable name in the original data set, "BodyBody" was relabeled to "Body."
 * Subject and Activity columns were labeled appropriately.
 * Only the variable names corresponding to columns for "mean" and "std" were applied.
 
@@ -38,6 +41,7 @@ In order to create a tidy data set with proper variable names, the original name
 A tidy data set was created using the average of all measurements for each possible combination of subject and activity.
 
 The tidy data set contains the following variables, listed by column number:
+
  [1] "Subject"                                 
  [2] "Activity"                                
  [3] "TimeBodyAccelerationMeanX"               
