@@ -125,3 +125,5 @@ The tidy data set contains the following variables, listed by column number:
 [81] "FrequencyBodyGyroJerkMagMeanFreq" 
 
 These variables represent the mean value of all instances of each possible combination of subject and activity from the original data set containing the key words "mean" or "std", with expanded and cleaned variable names.
+
+Variables representing time domain measurements are prefixed by "Time," while frequency domain measurements are prefixed by "Frequency."  Variables have been normalized and are therefore unit-less.
